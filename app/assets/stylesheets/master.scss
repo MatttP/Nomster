@@ -1,0 +1,30 @@
+@import "bootstrap";
+
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.booyah-box {
+    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+    box-shadow: 1px 1px 2px 0 #d0d0d0;
+    background: #347734;
+    border: 1px solid #ccc;
+    border-color: #c5d343 #c5d343 #c5d343;
+    margin-top: 15px;
+    padding: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: image_url('dark_exa');
+    font-family: 'Lobster', cursive;
+}
+
+.navbar {
+    background: image_url('cartographer');
+    box-shadow: 0px 1px 3px #347734;
+}
+
