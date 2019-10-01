@@ -3,8 +3,7 @@
   <head>
     <title>Nomster</title>
     <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
-
+   
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -22,7 +21,7 @@
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item">
             <%= link_to new_place_path, class: 'nav-link' do %>
-              <i class:="fa fa-plus-circle">New Place</i>
+              <i class="fa fa-plus-circle">New Place</i>
               
             <% end %>
           </li>
