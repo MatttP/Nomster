@@ -10,8 +10,12 @@ class PlacesController < ApplicationController
     end
 
     def create
-        current_user.places.create(place_params)
-        redirect_to root_path
+        @place = create_user.places.create(place.params)
+        if @place.valid?
+            redirect_to root_path
+        else
+            renser :new, status: :unprocessable_entity            
+        end
     end
 
     def show
@@ -31,7 +35,12 @@ class PlacesController < ApplicationController
             return render plain: 'Not Allowed', status: forbidden
         end
         @place.update_attributes(place_params)
-        redirect_to root_path
+        if @place.valid?
+            redirect_to root_path
+                  
+        else
+            render :edit, status: :unprocessable_entity            
+        end
     end
 
     def destroy
