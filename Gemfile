@@ -37,7 +37,8 @@ source 'https://rails-assets.org' do
 end
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
-
+gem 'geocoder'
+gem 'figaro'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
