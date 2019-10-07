@@ -63,7 +63,7 @@
 <br />
 
 <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
-    Voice your opinion
+    Got something to say?
 </button>
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -71,9 +71,9 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">something</span>
+                    <span aria-hidden="true">Kava Squawk Box</span>
                 </button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="myModalLabel">Your opinions on the matter?</h4>
             </div>
             <%= simple_form_for @comment, url:place_comments_path(@place) do |f| %>
                 <div class="modal-body">
@@ -81,27 +81,36 @@
                     <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">close</button>       
-                    <%= f.submit "add a comment", class: 'btn btn-success' %>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Nevermind I'll be quiet..</button>       
+                    <%= f.submit "Say it out loud", class: 'btn btn-success' %>
                 </div>
             <% end %>
             </div>
         </div>
     </div>
 </div>
+<br />
+<br />
 
+<div class="col-10 offset-1">
+    <h1 class="float-left">Kava Squawk</h1>
 
-<h1>Comments</h1>
+    <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myModal">
+        Add a comment
+    </button>
 
-<% @place.comments.each do |comment| %>
-    <div>
-        <blockquote>
-            <% if comment.humanized_rating.present? %>
-                <b><%= comment.rating %></b>
-            <% end %>
-            <% comment.message %>
-            <small><%= comment.user.email %></small>
-        </blockquote>
-    </div>
-<% end %>
+<div class="clear"></div>
 
+<div class="row">
+    <% @place.comments.each do |comment| %>
+        <div class="col-12 col-sm-6">
+            <blockquote>
+                <% if comment.humanized_rating.present? %>
+                    <b><%= comment.rating %></b>
+                <% end %>
+                <% comment.message %>
+                <small><%= comment.user.email %></small>
+            </blockquote>
+        </div>
+    <% end %>
+</div>
