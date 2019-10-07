@@ -63,15 +63,15 @@ i, p {
 }
 
 blockquote {
-    background-color: rgba(112, 111, 110, 0.3);
-    border-left: 10px solid rgb(241, 153, 42);
+    background-color: rgba(243, 231, 65, 0.3);
+    border-left: 10px solid rgb(109, 108, 107);
     margin: 1.5em 10px;
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
   }
   
   blockquote:before {
-    color: #ccc;
+    color: rgb(240, 106, 106);
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
