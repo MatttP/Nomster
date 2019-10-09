@@ -95,7 +95,7 @@
     <h1 class="float-left">Kava Squawk</h1>
 
     <button type="button" class="btn btn-success btn-lg float-right" data-toggle="modal" data-target="#myModal">
-        Add a comment
+        Say It Now
     </button>
 </div>
 
@@ -116,6 +116,7 @@
 </div>
 
 
+
     <div>
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
             <%= f.input :picture %>
@@ -123,5 +124,7 @@
             <%= f.submit "Add photo?", class: 'btn btn-success' %>
         <% end %>
     </div>
+
+
 
 

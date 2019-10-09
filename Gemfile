@@ -41,7 +41,7 @@ gem 'geocoder'
 gem 'figaro'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
+gem 'fog-aws'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
@@ -74,3 +74,4 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.2'
 
 gem 'carrierwave', '~> 1.0'
+
