@@ -107,7 +107,7 @@
 </button>
 
 <div class="row">
-    <% @place.photo.each do |photo| %>
+    <% @place.photos.each do |photo| %>
         <div class="col-12 col-sm-6">
             <blockquote>
                 <%= simple_form_for @photo, url: place_photos_path(@place) do |photo| %>
