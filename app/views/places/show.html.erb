@@ -53,25 +53,17 @@
 
 <div class="clear"></div>
 
-<%= simple_form_for [@place, @comment], url: place_comments_path(@place) do |f| %>
-    <%= f.input :message %>
-     <%= f.input :rating, as: :select, collection: Comment::RATINGS %>
-    <br />
-    <%=f.submit "Say it out loud", class: 'btn btn-success' %>
-<% end %>
 <br />
 <br />
 
-<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
-    Got something to say?
-</button>
+
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">Kava Squawk Box</span>
+                    <span aria-hidden="true">Kava Squawk</span>
                 </button>
                 <h4 class="modal-title" id="myModalLabel">Your opinions on the matter?</h4>
             </div>
@@ -95,7 +87,7 @@
     <h1 class="float-left">Kava Squawk</h1>
 
     <button type="button" class="btn btn-success btn-lg float-right" data-toggle="modal" data-target="#myModal">
-        Say It Now
+        Something to say?
     </button>
 </div>
 
