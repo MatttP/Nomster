@@ -6,11 +6,9 @@
         <br />
         <p><%= @place.description %></p>
 
-
     </head>
     <body>
-    
-    
+     
 <% if @place.latitude.present? && @place.longitude.present?  %>
         <script>
 
@@ -36,7 +34,6 @@
 
         <div id="map"></div>
 <% end %>
-
 <br />
 <br />
 
@@ -52,11 +49,8 @@
 <br />
 
 <div class="clear"></div>
-
 <br />
 <br />
-
-
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
@@ -107,18 +101,23 @@
     <% end %>
 </div>
 
-<div class="row">
-    <div class="col-10 col-sm-5">
-        <% image_url (@photo) %>
-    </div>
-    <div>
-        <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
-            <%= f.input :picture %>
-            <%= f.input :caption %>
-            <%= f.submit "Add photo?", class: 'btn btn-success' %>
-        <% end %>
-    </div>
+<div class="clear"></div>
+<button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#photoModal">
+    add photo
+</button>
 
+<div class="row">
+    <% @place.photo.each do |photo| %>
+        <div class="col-12 col-sm-6">
+            <blockquote>
+                <%= simple_form_for @photo, url: place_photos_path(@place) do |photo| %>
+                <%= f.input :picture %>
+                <%= f.input :caption %>
+                <%= f.submit "Add a photo?", class: 'btn btn-success' %>
+                <% end %>
+            </blockquote>
+        </div>
+    <% end %>
 </div>
 
 
