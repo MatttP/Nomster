@@ -133,8 +133,10 @@
     <% @place.photos.each do |photo| %>
         <div class="col-12 col-sm-6">
             <blockquote>
+                <% if photo.present? %>
                     <b>Photo</b>
-                    <img class="img-fluid" src='kava-krawler-bucket'>
+                <% end %>
+                    <img class="img-fluid" src= 'AWS_BUCKET' >
                 <%= photo.message %>
                 <small><%= photo.user.email %></small>
             </blockquote>
