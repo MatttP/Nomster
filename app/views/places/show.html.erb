@@ -107,8 +107,10 @@
     <% end %>
 </div>
 
-
-
+<div class="row">
+    <div class="col-10 col-sm-5">
+        <% image_url (@photo) %>
+    </div>
     <div>
         <%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
             <%= f.input :picture %>
@@ -117,6 +119,6 @@
         <% end %>
     </div>
 
-
+</div>
 
 
