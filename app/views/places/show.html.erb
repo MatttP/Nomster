@@ -123,7 +123,7 @@
             
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <%= f.submit "Save Changes, class: 'btn btn-success"%>
+                <%= f.submit "Save Changes", class: 'btn btn-success' %>
             </div>
             <% end %>
         </div>
@@ -134,7 +134,7 @@
     <% @place.photos.each do |photo| %>
         <div class="col-12 col-sm-6">
             <blockquote>
-                <%= image_tag '#', class: 'img-fluid' %>
+                <%= image_tag 'phto.picture', class: 'img-fluid' %>
                     <b>Photo</b>
              
                 <%= photo.caption %>
