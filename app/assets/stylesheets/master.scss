@@ -16,6 +16,15 @@
     border-color: #c5d343 #c5d343 #c5d343;
     margin-top: 15px;
     padding: 20px;
+
+    a {
+        color: #c8ca04;
+
+        &:hover {
+            color: #737503;
+            text-decoration: none;
+        }
+    }
 }
 
 h1, h2, h3, h4, h5, h6 {
