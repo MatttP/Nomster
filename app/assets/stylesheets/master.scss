@@ -8,87 +8,111 @@
 @import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
 
 .booyah-box {
-    -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
-    -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
-    box-shadow: 1px 1px 2px 0 #d0d0d0;
-    background-color: rgba(93, 230, 89, 0.3);
-    border: 1px solid #ccc;
-    border-color: #c5d343 #c5d343 #c5d343;
-    margin-top: 15px;
-    padding: 20px;
+  -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
+  box-shadow: 1px 1px 2px 0 #d0d0d0;
+  background-color: rgba(93, 230, 89, 0.3);
+  border: 1px solid #ccc;
+  border-color: #c5d343 #c5d343 #c5d343;
+  margin-top: 15px;
+  padding: 20px;
 
-    a {
-        color: #c8ca04;
+  a {
+      color: #E3E85A;
 
-        &:hover {
-            color: #737503;
-            text-decoration: none;
-        }
-    }
+      &:hover {
+          color: #737503;
+          text-decoration: none;
+      }
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background: image_url('dark_exa');
-    font-family: 'Lemonada', cursive;
+  background: image_url('dark_exa');
+  font-family: 'Lemonada', cursive;
 }
 
 .navbar {
-    background: image_url('cartographer');
-    box-shadow: 0px 1px 3px #347734;
+  background: image_url('cartographer');
+  box-shadow: 0px 1px 3px #347734;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
-    color: #E3E85A;
-    font-family: 'Bungee Inline', cursive;
-    font-size: 26px;
+  color: #E3E85A;
+  font-family: 'Bungee Inline', cursive;
+  font-size: 26px;
 }
 
 h1 {
-    color: #E3E85A;
+  color: #E3E85A;
 }
 
 i, p {
-    color: #F1992A;
+  color: #F1992A;
 }
 
 .invalid-feedback {
-    color: #DE3C1F;
-    background-color: #F1992A;
-    border-radius: 3px;
-    padding: 2px 8px 2px 8px;
+  color: #DE3C1F;
+  background-color: #F1992A;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
 }
 
 #map {
-    height: 300px;
+  height: 300px;
 }
 
 .clear {
-    clear: both;
+  clear: both;
 }
 
 blockquote {
-    background-color: rgba(243, 231, 65, 0.3);
-    border-left: 10px solid rgb(109, 108, 107);
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
-  }
+  background-color: rgba(243, 231, 65, 0.3);
+  border-left: 10px solid rgb(109, 108, 107);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
   
-  blockquote:before {
-    color: rgb(240, 106, 106);
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
-  }
+blockquote:before {
+  color: rgb(240, 106, 106);
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img { 
+  height: 550px;
+  width: 100%;
   
-  blockquote p {
-    display: inline;
-  }
+}
+
+.carousel {
+  /* display: block; */
+  box-shadow: 0px 3px 8px #2a2a2a;
+} 
+
+.carousel-caption {
+  color: #D9534F;
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(245, 77, 147, 0) 1px 1px;
+  background-color: rgba(247, 217, 121, 0.18);
+  /* width: 100%;
+  position: absolute;
+  left: 0; */
+}
 
