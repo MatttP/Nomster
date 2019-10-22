@@ -9,7 +9,7 @@
 
       <h3>Sipping since: <%= @user.created_at.strftime("%d %B, %Y") %><h3>
       <h4>Total of: <%= @user.comments.count %> opinions made.</h4>
-      <h4>Has made <%= @user.comments.where(rating: '5_stars') %> 5 star reviews!</h4>
+      <h4>Has made: <%= @user.comments.where(rating: '5_stars').count %>, 5 star reviews!</h4>
     </div>
   </div>
   <div class="clear"></div>
@@ -19,7 +19,7 @@
 <br />
 
 <h1 class="text-center">My Squawks</h1>
-<br />
+<br /><br />
 <div class="row">
   <% @user.comments.each do |comment| %>
     <div class="col-12 col-sm-6">
