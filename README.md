@@ -1,24 +1,5 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a ratings and review site. Users can create/ "list" a new place with an address that will show others on a map as to where the business is using Google Maps API.
+Users are also able to leave reviews/ comments and ratings (1-5 stars)
+https://nomster-matt-parr.herokuapp.com to see the app.
