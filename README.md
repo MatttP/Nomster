@@ -21,5 +21,5 @@ Users also have a profile page which shows them the comments they have left (and
 
 Here they can click on a place they have created and choose to "Edit" or "Destory" the place. Only the user that created the place initially can remove listed location.
 
-![PlaceDestroy.png] (./app/assets/images/PlaceDestroy.png)
+![PlaceDestroy.png](./app/assets/images/PlaceDestroy.png)
 
