@@ -6,9 +6,20 @@ https://nomster-matt-parr.herokuapp.com to see the app.
 
 ![HomeScreen.png](./app/assets/images/HomeScreen.png)
 
-Users can sign up and create a profile in this app. On the user profile page it will display places they've listed and comments ("squawks") that have been made("my tribe").
+Users can sign up and create a profile in this app. On the user profile page it will display places they've listed and comments ("Squawks") that have been made("My Tribe").
 Clicking on the place name will bring user to the places page with location and ratings/ comments.
 
 ![PlacePage.png](./app/assets/images/PlacePage.png)
 
-Photos can also be added to the location pages.
+Comments and photos can also be added to the location pages under "Kava Squawk".
+
+![CommentsPhotos.png](./app/assets/images/CommentsPhotos.png)
+
+Users also have a profile page which shows them the comments they have left (and place names the comment resides in) as well as the places they have added to the app.
+
+![PlacePage.png](./app/assets/images/PlacePage.png)
+
+Here they can click on a place they have created and choose to "Edit" or "Destory" the place. Only the user that created the place initially can remove listed location.
+
+![PlaceDestroy.png] (./app/assets/images/PlaceDestroy.png)
+
